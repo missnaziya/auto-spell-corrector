@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auto Spelling Corrector</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #10456d;
+      margin: 0;
+      padding: 0;
+      width: 300px;
+      height: 500px;
+    }
+    .container{
+       margin: 20px;
+    }
+    h1 {
+      background-color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    textarea, input {
+      width: 90%;
+      padding: 10px;
+      font-size: 14px;
+      font-family: Arial, sans-serif;
+      border: 2px solid #1a75eb;
+      border-radius: 10px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 16px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Auto Spelling Corrector</h1>
+
+    <div id="authForms">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button id="loginBtn">Login</button>
+      <h2>Register</h2>
+      <input type="text" id="regUsername" placeholder="Username">
+      <input type="password" id="regPassword" placeholder="Password">
+      <button id="registerBtn">Register</button>
+    </div>
+
+    <textarea id="inputText" rows="6" placeholder="Enter text here..."></textarea>
+    <button id="correctBtn">Auto Correct</button>
+    <textarea id="outputText" rows="6" placeholder="Corrected text will appear here..."></textarea>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

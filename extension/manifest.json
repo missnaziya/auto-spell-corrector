@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Spelling Corrector",
+  "version": "1.0",
+  "description": "A spelling correction tool using TextBlob.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+  
+    }
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}
